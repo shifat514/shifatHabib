@@ -1,15 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="text-white m-auto">
-		<div class="flex justify-center">
-			<div class="bg-slate-800   border border-gray-600 rounded-lg text-base  w-[1000px] font-mono min-h-[557px] ">
-				<div class="bg-gray-600  h-10 rounded-t-md">
-					<div class="flex justify-between">
-						<div class="bg-gray-500 p-2 m-1 rounded">
+	<main class="flex justify-center p-6 px-8">
+		<div class="max-w-[1000px]">
+			<div class="flex gap-x-4 items-center relative">
+				<div class="text-white sm:text-5xl text-4xl font-ubuntu_light text-header"> > &nbspShifat &nbsp Habib</div>
+			</div>
+			<div class="text-white mt-16 font-mono text-lg">Hey, I'm Shifat. I'm a frontend developer. I like designing and developing frontend UI. I also spend some times centering div and updating npm packages everyday.  </div>
+			<div class="mt-6 text-white bg-gray-800  border border-gray-600 rounded-lg min-h-[557px] font-mono sm:text-base text-xs">
+				<!--header -->
+				<div class="bg-gray-700 h-10 rounded-t-md">
+					<div class="flex flex-wrap justify-between">
+						<div class="bg-gray-600 p-2 m-1 rounded">
 							<div class="flex justify-center item-center border border-white  border-b-transparent h-3.5 w-3.5">
 								<div class="-mt-1 text-sm">+</div>
 							</div>
@@ -17,102 +21,88 @@ import Card from '../components/Card.astro';
 						<div class="mt-2 font-ubuntu">
 							Terminal
 						</div>
-						<div class="flex justify-center gap-x-4">
-							<div class="h-1 w-5 mt-3 bg-white rounded"></div>
+						<div class="flex justify-center gap-x-4 mt-1 mr-2">
+							<div class="h-0.5 w-5 mt-3 bg-white rounded"></div>
 							<div class="border-2 border-white h-3 w-3 mt-2 rounded-sm"></div>
-							<div class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="12px" width="12px" version="1.1" id="Capa_1" viewBox="0 0 490 490" xml:space="preserve">
-								<polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490   489.292,457.678 277.331,245.004 489.292,32.337 "/>
-								</svg></div>
+							<div class="rounded-full h-6 w-6 flex justify-between items-center">
+								<?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 612 792;" version="1.1" viewBox="0 0 612 792" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+									.st0{fill:#84cc18;}
+								</style><g><path class="st0" d="M562,396c0-141.4-114.6-256-256-256S50,254.6,50,396s114.6,256,256,256S562,537.4,562,396L562,396z M356.8,396   L475,514.2L424.2,565L306,446.8L187.8,565L137,514.2L255.2,396L137,277.8l50.8-50.8L306,345.2L424.2,227l50.8,50.8L356.8,396   L356.8,396z"/></g></svg>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="p-2">
+	
+				<div class="sm:p-2 p-1">
 					<div class="">
 						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~</span>$<span></span> cd Desktop/Shifat
 					</div>
 					<div class="">
 						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~/Desktop/Shifat</span>$<span></span> ls
-						<div class="text-lime-500 flex gap-x-12">
+						<div class="text-lime-500 flex flex-wrap gap-x-12">
 							<div>personal-info.js</div> <div>shifat-habib.pdf</div>
 						</div>
 					</div>
-
-					<div class="">
+	
+					<div class="break-words">
 						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~/Desktop/Shifat</span>$<span></span> node personal-info.js
-						<div class="text-lime-500">
-							<span class="text-white">&#123;</span>
+						<div>
+							<span>&#123;</span>
 							<div class="pl-4">
 								<div>
-									<span class="text-white">name:</span> 'Shifat Habib' <span class="text-white">,</span> 
+									name: <span class="text-lime-500">'Shifat Habib'</span>,
 								</div>
 								<div>
-									<span class="text-white">location:</span> <span class="text-lime-500">
-										"Rampura, Dhaka, Bangladesh"
-									</span><span class="text-white">,</span>
+									location: <span class="text-lime-500">"Rampura, Dhaka, Bangladesh"</span>,
 								</div>
 								<div>
-									<span class="text-white">currentJob:</span> 'Junior Frontend Developer, Sayburgh Solutions'<span class="text-white">,</span>
+									currentJob:
+									<span>&#123;</span>
+									<div class="pl-4">designation: <span class="text-lime-500">'Junior Frontend Developer'</span>,</div>
+									<div class="pl-4">company: <span class="text-lime-500">'Sayburgh Solutions'</span></div>
+									<span><span>&#125;</span>,
 								</div>
 								<div>
-									<span class="text-white">contactInfo:
-										</span>
+									contactInfo: [
 										<span class="text-lime-500">
-											[
-											<span class="text-cyan-300 hover:text-cyan-500">
-												<a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shifat514@gmail.com&tf=1
-												"><span class="text-lime-500">"</span>shifat514@gmail.com<span class="text-lime-500">"</span></a>
-											</span>,
-											<span class="text-cyan-300 hover:text-cyan-500">
-												<a href="https://www.linkedin.com/in/shifat-habib-919b40159/"><span class="text-lime-500">"</span>Linkedin<span class="text-lime-500">"</span></a>
-											</span>,
-											<span class="text-cyan-300 hover:text-cyan-500">
-												<a href="https://github.com/shifat514"><span class="text-lime-500">"</span>github<span class="text-lime-500">"</span></a>
-											</span>,
-											<span class="text-cyan-300 hover:text-cyan-500">
-												<a href="https://www.facebook.com/shifat.habib.3/"><span class="text-lime-500">"</span>facebook<span class="text-lime-500">"</span></a>
-											</span>
-											]
+											<a target="_blank" href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shifat514@gmail.com&tf=1">
+												"<span class="text-cyan-300 hover:text-cyan-500">shifat514@gmail.com</span>"
+											</a>,
+											<a target="_blank" href="https://www.linkedin.com/in/shifat-habib-919b40159/">
+												"<span class="text-cyan-300 hover:text-cyan-500">Linkedin</span>"
+											</a>,	
+											<a target="_blank" href="https://github.com/shifat514">
+												"<span class="text-cyan-300 hover:text-cyan-500">github</span>"
+											</a>,
+											<a target="_blank" href="https://www.facebook.com/shifat.habib.3/">
+												"<span class="text-cyan-300 hover:text-cyan-500">facebook</span>"
+											</a>
 										</span>
-									<span class="text-white">,</span>
+									],
 								</div>
-								<!-- <div>
-									<span class="text-white">interests:</span>
-									<span class="text-lime-500">["cycling", "watching movies", "creating tech content","building pc"]</span><span class="text-white">,</span>
-								</div> -->
+								<div class="break-words">
+									<span >skills:</span>
+									<span>&#123;</span>
+									<div class="pl-4">goodAt: [<span class="text-lime-500">'JavaScript','Vue','Nuxt','Vuetify','Tailwind'</span>],</div>
+									<div class="pl-4">familiarWith: [<span class="text-lime-500">'C','C++',TypeScript','SQL','Astro'</span>]</div>
+									<span><span>&#125;</span>,
+								</div>
 								<div>
-									<span class="text-white">skills:</span>
-									<span class="text-lime-500"><span>&#123;</span>
-									<div>goodAt: <span>['JavaScript','Vue','Nuxt','Vuetify','Tailwind']</span></div>
-								</span><span class="text-white">,</span>
-									<div>FamiliarWith: <span>['C','C++',TypeScript','Astro','SQL']</span></div>
-								
-								<span class="text-lime-500"><span>&#125;</span>
+									<span>interests:</span>
+									[<span class="text-lime-500">"cycling", "watching movies", "creating tech content","building pc"</span>]
 								</div>
 							</div>
-							<span class="text-white">&#125;</span>
+							<span>&#125;</span>
 						</div>
 					</div>
-
 					<div class="mt-2">
 						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~/Desktop/Shifat</span>$<span></span> evince "Shifat-Resume.pdf"
-						<div class="text-cyan-300 hover:text-cyan-500">
-							<span class="text-lime-500">"</span><a  target="_blank" href="https://drive.google.com/file/d/1ftJ7hr-nHGvJoPnXYYrdlCHwEQK0kZvD/view?usp=sharing">Shifat-Resume.pdf</a><span class="text-lime-500">"</span>
-						</div>
-					</div>
-					<div class="mt-6">
-						<span> > </span>Shifat.contactInfo
 						<div class="text-lime-500">
-							<span>[</span><span>]</span>
+							"<a target="_blank" href="https://drive.google.com/file/d/1ftJ7hr-nHGvJoPnXYYrdlCHwEQK0kZvD/view?usp=sharing"><span class="text-cyan-300 hover:text-cyan-500">Shifat-Resume.pdf</span></a>"
 						</div>
 					</div>
-					<div class="mt-6 ">
-						<span> > </span>Shifat.contactInfo
-						<div class="text-lime-500">
-							<span>[</span><span>]</span>
-						</div>
-					</div>
-					<div class="mt-6 text">
-						<span>> </span>
+					<div class="mt-2 text">
+						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~/Desktop/Shifat</span>$
 					</div>
 				</div>
 			</div>
@@ -121,11 +111,38 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
+	.text-header {
+	position: relative;
+	display: inline-block;
+	}
+	.text-header::after {
+	content: "";
+	position: absolute;
+	top: 1;
+	right: -32px;
+	/* Remove display: inline-block if not required to be on the same line as text etc */
+	/* display: inline-block; */
+	background-color: #ffffff;
+	/* vertical-align: top; */
+	width: 24px;
+	/* Set height to the line height of .text */
+	height: 46px;
+	/* 
+	Animation paramaters:
+	blink = animation-name, 
+	1s = animation-duration, 
+	step-end = animation-timing-function,
+	infinite = animation-iteration-count
+	*/
+	-webkit-animation: blink 1.5s step-end infinite;
+	animation: blink 1.5s step-end infinite;
+	}
+
+
 	.text { 
 	position: relative;
 	display: inline-block;
 	}
-
 	.text::after {
 	content: "";
 	position: absolute;
@@ -133,11 +150,11 @@ import Card from '../components/Card.astro';
 	right: -15px;
 	/* Remove display: inline-block if not required to be on the same line as text etc */
 	/* display: inline-block; */
-	background-color: #959595;
+	background-color: #a0a0a0;
 	/* vertical-align: top; */
 	width: 8px;
 	/* Set height to the line height of .text */
-	height: 24px;
+	height: 20px;
 	/* 
 	Animation paramaters:
 	blink = animation-name, 
@@ -159,14 +176,5 @@ import Card from '../components/Card.astro';
 	0% { opacity: 1.0; }
 	50% { opacity: 0.0; }
 	100% { opacity: 1.0; }
-	}
-
-	
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
 	}
 </style>
