@@ -13,6 +13,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/src/Styles/style.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -21,6 +22,18 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@font-face {
+		font-family: 'ubuntu';
+		src: url('/public/fonts/Ubuntu-Regular.ttf');
+	}
+	@font-face {
+		font-family: 'ubuntu-light';
+		src: url('/public/fonts/Ubuntu-Light.ttf');
+	}
+	@font-face {
+		font-family: 'ubuntu-bold';
+		src: url('/public/fonts/Ubuntu-Bold.ttf');
+	}
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
