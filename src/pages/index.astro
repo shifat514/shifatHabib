@@ -1,33 +1,58 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="flex justify-center p-6 px-8">
-		<div class="max-w-[1000px]">
-			<div class="flex gap-x-4 items-center relative">
-				<div class="text-white sm:text-5xl text-4xl font-ubuntu_light text-header"> > &nbspShifat &nbsp Habib</div>
+	<main class="flex justify-center">
+		<div class="max-w-[1000px] mx-4">
+			<Navbar />
+			<div class="mt-16 flex gap-x-4 items-center relative">
+				<div class="text-slate-200 sm:text-5xl text-3xl font-mono text-header">>_&nbspshifat habib</div>
 			</div>
-			<div class="text-white mt-16 font-mono text-lg">Hey, I'm Shifat. I'm a frontend developer. I like designing and developing frontend UI. I also spend some times centering div and updating npm packages everyday.  </div>
-			<div class="mt-6 text-white bg-gray-800  border border-gray-600 rounded-lg min-h-[557px] font-mono sm:text-base text-xs">
+			<div class="text-slate-400 mt-6 sm:mt-12 font-mono font-semibold text-sm sm:text-lg"><span class="text-white">Hey, I'm Shifat.</span>  I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.  </div>
+			<div class="mt-6 text-white bg-gray-800  rounded-lg min-h-[557px] font-mono sm:text-base text-xs">
 				<!--header -->
 				<div class="bg-gray-700 h-10 rounded-t-md">
-					<div class="flex flex-wrap justify-between">
-						<div class="bg-gray-600 p-2 m-1 rounded">
-							<div class="flex justify-center item-center border border-white  border-b-transparent h-3.5 w-3.5">
-								<div class="-mt-1 text-sm">+</div>
+					<div class="flex flex-nowrap justify-between">
+						<div>
+							<div class="bg-gray-600 h-8 w-8 m-1 rounded  relative">
+								<div class="absolute top-2.5 left-2.5 border border-white  border-b-transparent h-3 w-3">
+									<div class="-mt-[3px] ml-[2px] text-xs">+</div>
+								</div>
 							</div>
 						</div>
-						<div class="mt-2 font-ubuntu">
+						<div class="mt-3 sm:mt-2 ml-12 sm:ml-32 font-ubuntu_bold">
 							Terminal
 						</div>
-						<div class="flex justify-center gap-x-4 mt-1 mr-2">
-							<div class="h-0.5 w-5 mt-3 bg-white rounded"></div>
-							<div class="border-2 border-white h-3 w-3 mt-2 rounded-sm"></div>
-							<div class="rounded-full h-6 w-6 flex justify-between items-center">
-								<?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 612 792;" version="1.1" viewBox="0 0 612 792" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-									.st0{fill:#84cc18;}
-								</style><g><path class="st0" d="M562,396c0-141.4-114.6-256-256-256S50,254.6,50,396s114.6,256,256,256S562,537.4,562,396L562,396z M356.8,396   L475,514.2L424.2,565L306,446.8L187.8,565L137,514.2L255.2,396L137,277.8l50.8-50.8L306,345.2L424.2,227l50.8,50.8L356.8,396   L356.8,396z"/></g></svg>
+						<div class="flex gap-x-8 mt-1 mr-2">
+							<div class="hidden sm:flex gap-x-2">
+								<div class="bg-gray-600 h-8 w-8 relative rounded">
+									<div class="absolute top-2 left-2">
+										<svg  fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 30 30">
+											<path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+											</svg>
+									</div>
+								</div>
+								<div class="bg-gray-600 h-8 w-8 relative rounded">
+									<div class="absolute top-2 left-2">
+										<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24">
+											<path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+											</svg>
+									</div>
+								</div>
+							</div>
+							<div class="flex gap-x-6">
+								<div class="h-0.5 w-2 mt-[14px] bg-white rounded"></div>
+								<div class="border border-white h-[10px] w-[10px] mt-2.5"></div>
+								<div class="rounded-full mt-[2px] h-6 w-6 flex justify-between items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+										<path fill="#ef4115" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path><path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+										</svg>
+									<!-- <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 612 792;" version="1.1" viewBox="0 0 612 792" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+										.st0{fill:#84cc18;}
+									</style><g><path class="st0" d="M562,396c0-141.4-114.6-256-256-256S50,254.6,50,396s114.6,256,256,256S562,537.4,562,396L562,396z M356.8,396   L475,514.2L424.2,565L306,446.8L187.8,565L137,514.2L255.2,396L137,277.8l50.8-50.8L306,345.2L424.2,227l50.8,50.8L356.8,396   L356.8,396z"/></g></svg> -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -39,7 +64,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 					<div class="">
 						<span class="text-lime-500">shifat@pc</span>:<span class="text-blue-400">~/Desktop/Shifat</span>$<span></span> ls
-						<div class="text-lime-500 flex flex-wrap gap-x-12">
+						<div class="text-purple-500 flex flex-wrap gap-x-12">
 							<div>personal-info.js</div> <div>shifat-habib.pdf</div>
 						</div>
 					</div>
@@ -51,6 +76,9 @@ import Layout from '../layouts/Layout.astro';
 							<div class="pl-4">
 								<div>
 									name: <span class="text-lime-500">'Shifat Habib'</span>,
+								</div>
+								<div >
+									phone: <span class="text-lime-500 cursor-pointer">'<a class="text-cyan-300 hover:text-cyan-500" href="tel:+8801521436358">+8801521436358</a>'</span>,
 								</div>
 								<div>
 									location: <span class="text-lime-500">"Rampura, Dhaka, Bangladesh"</span>,
@@ -115,29 +143,18 @@ import Layout from '../layouts/Layout.astro';
 	position: relative;
 	display: inline-block;
 	}
+	
 	.text-header::after {
 	content: "";
 	position: absolute;
 	top: 1;
-	right: -32px;
-	/* Remove display: inline-block if not required to be on the same line as text etc */
-	/* display: inline-block; */
-	background-color: #ffffff;
-	/* vertical-align: top; */
+	right: -36px;
+	background-color: #19ae1d;
 	width: 24px;
-	/* Set height to the line height of .text */
 	height: 46px;
-	/* 
-	Animation paramaters:
-	blink = animation-name, 
-	1s = animation-duration, 
-	step-end = animation-timing-function,
-	infinite = animation-iteration-count
-	*/
 	-webkit-animation: blink 1.5s step-end infinite;
 	animation: blink 1.5s step-end infinite;
 	}
-
 
 	.text { 
 	position: relative;
@@ -150,11 +167,11 @@ import Layout from '../layouts/Layout.astro';
 	right: -15px;
 	/* Remove display: inline-block if not required to be on the same line as text etc */
 	/* display: inline-block; */
-	background-color: #a0a0a0;
+	background-color: #ffffff;
 	/* vertical-align: top; */
 	width: 8px;
 	/* Set height to the line height of .text */
-	height: 20px;
+	height: 18px;
 	/* 
 	Animation paramaters:
 	blink = animation-name, 
@@ -177,4 +194,5 @@ import Layout from '../layouts/Layout.astro';
 	50% { opacity: 0.0; }
 	100% { opacity: 1.0; }
 	}
+
 </style>
