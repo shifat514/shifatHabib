@@ -1,26 +1,58 @@
 ---
-
 ---
-<div class="flex justify-center">
-    <div class="w-[900px] mx-4">
-        <nav class="pt-8 sm:pt-12 flex gap-x-4 justify-center sm:justify-end text-slate-400 text-base sm:text-lg font-mono font-semibold">
-            <div class="hover:text-lime-500">
-                <a href="/">home</a>
-            </div>
+<div class="flex justify-center ">
+    <div class="w-[900px] mx-4 relative">
+        <nav class="pt-8 sm:pt-12 hidden sm:flex gap-x-4 justify-start text-slate-400 text-base sm:text-lg font-mono font-semibold">
+            <a class="hover:text-lime-400" href="/">home</a>
             <div class="border border-slate-400 mt-2 h-[15px] border-r"></div>
-            <div class="hover:text-lime-500">
-                <a href="/about">work</a>
-            </div>
+            <a class="hover:text-lime-400" href="/about">work</a>
             <div class="border border-slate-400 mt-2 h-[15px] border-r"></div>
-        
-            <div class="hover:text-lime-500">
-                <a href="/projects">projects</a>
-            </div>
-            <div class="border border-slate-400 mt-2 h-[15px] border-r"></div>
-            <div class="hover:text-lime-500">
-                <a href="/blogs">blogs</a> 
-            </div>
+            <a class="hover:text-lime-400" href="/projects">projects</a>
+            <div class="border border-slate-400 mt-2 h-[15px] borders-r"></div>
+            <a class="hover:text-lime-400" href="/blogs">blogs</a> 
         </nav>
+        <div class="w-full sm:hidden flex justify-end">
+            <nav class="pt-8 sm:pt-12 gap-x-4 text-slate-400 text-base sm:text-lg font-mono font-semibold ">
+                <button  id="nav-toggle">
+                    <div>
+                        <svg id="cross" class="hidden" fill="#19ae1d" height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "></polygon> </g></svg>
+                        
+                        <svg  id="menu" class="" fill="#76a1b8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </nav>
+            <div id="menubar" class="hidden w-full absolute top-16 font-mono ">
+                <div class=" bg-slate-900 bg-opacity-50 text-lime-400 justify-end text-right">
+                    <div class="p-4 flex flex-col gap-y-6">
+                        <a href="/">home</a>
+                        <a href="/about">work</a>
+                        <a href="/projects">projects</a>
+                        <a href="/blogs">blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr class="w-full border-t-2 border-slate-900 mt-2">
     </div>
 </div>
+<script>
+    const button = document.getElementById('nav-toggle')
+        let toggle = false
+        let btn1 = document.getElementById('menu')
+        let btn2 = document.getElementById('cross')
+        let div = document.getElementById('menubar')
+        button?.addEventListener('click',()=>{
+            toggle = !toggle
+            if(toggle === true) {
+                btn1?.classList.add('hidden')
+                btn2?.classList.remove('hidden')
+                div?.classList.remove('hidden')
+            } else {
+                btn1?.classList.remove('hidden')
+                btn2?.classList.add('hidden')
+                div?.classList.add('hidden')
+            }
+        })
+</script>
