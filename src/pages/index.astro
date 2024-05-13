@@ -5,35 +5,45 @@ import Terminal from '../components/Terminal.astro'
 
 <Layout title="Welcome to Astro.">
 	<main class="flex justify-center">
-		<!-- <div class="max-w-[900px] mx-4">
-			<div class="mt-28 flex gap-x-2 items-center relative">
-				<div class="text-slate-200 sm:text-3xl text-xl font-ubuntu_bold tracking-widest">>_&nbspShifat Habib</div>
-				<div class="sm:flex  opacity-60 hidden cursor"></div>
-				<div class="sm:hidden opacity-60 flex cursor-sm"></div>
+		<div class="max-w-[900px] mx-4">
+			<!-- <div class="mt-28 flex gap-x-2 items-center relative">
+				<div class="text-black sm:text-3xl text-xl font-ubuntu_bold">>_&nbspasdfa</div>
+				<div class="sm:flex hidden cursor"></div>
+				<div class="sm:hidden  flex cursor-sm"></div>
 			</div>
-			<div class="text-slate-400 mt-6 sm:mt-12 font-mono font-semibold text-sm sm:text-lg">
-				<span class="text-white">Hey, I'm Shifat.</span>  
+			<div class="text-black mt-6 sm:mt-12 font-ubuntu_bold font-semibold text-sm sm:text-lg">
+				<span class="text-accent">Hey, I'm Shifat.</span>  
 				I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.
-			</div>
+			</div> -->
 			<Terminal />
-		</div> -->
+		</div>
 	</main>
 </Layout>
-<style>
+<style scoped>
 	.cursor {
-	background-color: #19ae1d;
-	opacity: 0.4 ;
+	background-color: #fa5e32;
 	line-height: 17px;
-	-webkit-animation: blink 1.5s step-end infinite;
+	-webkit-animation: blink 1s step-end infinite;
 	width: 12px;
 	height: 32px;
 	}
 	.cursor-sm {
-	background: #19ae1d;
+	background: #fa5e32;
 	line-height: 17px;
-	-webkit-animation: blink 1.5s step-end infinite;
+	-webkit-animation: blink 1s step-end infinite;
 	width: 12px;
 	height: 22px;
+	}
+	@-webkit-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+	}
+
+	@keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
 	}
 
 </style>
