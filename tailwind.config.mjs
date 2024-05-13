@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+	darkMode: ['selector','[data-mode="dark'],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		// fontFamily: {
@@ -14,19 +15,16 @@ export default {
 			colors: {
 				background:'#E9E9E9',
 				primary: '#f8f8f8',
-				accent:'#fa5e32',
-				terminal:'#502bd8',
+				accent:'#A6EC61',
+				terminal:'#1E1F21',
+				header:'#373A3E',
 				body:'#FAFAFA',
 				black: '#222222',
 				black200: '#231F20',
-				blue:'#0057FF',
 				grey0:'#F7F7F7',
 				grey1: '#d2d2d2',
 				grey2: '#4D4D4D',
-				grey3: '#2c2c2c',
-				grey4:'#F8F8F8',
-				grey5:'#3E3E3E',
-				green: '#16A34A',
+				grey3: '#494b4f',
 				greenFlag:'#107043',
 				success100:'#E6FEEF',
 				green200: '#BBF7D0',

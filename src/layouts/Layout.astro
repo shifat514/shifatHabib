@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import Navbar from '../components/Navbar.astro';
-// import Footer from '../components/Footer.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ import Navbar from '../components/Navbar.astro';
 	<body>
 		<Navbar />
 		<slot />
-		<!-- <Footer/> -->
+		<Footer/>
 	</body>
 </html>
 <style scoped>
@@ -39,6 +39,8 @@ import Navbar from '../components/Navbar.astro';
 		src: url('/public/fonts/Ubuntu-Bold.ttf');
 	}
 	html {
-		background: #E9E9E9;
+		/* background: #0e0e0e; */
+		background: #151515;
+
 	}
 </style>

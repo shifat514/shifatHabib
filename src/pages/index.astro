@@ -6,31 +6,35 @@ import Terminal from '../components/Terminal.astro'
 <Layout title="Welcome to Astro.">
 	<main class="flex justify-center">
 		<div class="max-w-[900px] mx-4">
-			<!-- <div class="mt-28 flex gap-x-2 items-center relative">
-				<div class="text-black sm:text-3xl text-xl font-ubuntu_bold">>_&nbspasdfa</div>
+			<div class="mt-28 flex gap-x-2 items-center">
+				<div class="text-grey1 sm:text-3xl text-xl font-ubuntu_bold">>_&nbspShifat Habib</div>
 				<div class="sm:flex hidden cursor"></div>
 				<div class="sm:hidden  flex cursor-sm"></div>
 			</div>
-			<div class="text-black mt-6 sm:mt-12 font-ubuntu_bold font-semibold text-sm sm:text-lg">
+			<div class="text-grey1 mt-6 sm:mt-12 font-ubuntu_bold font-semibold text-sm sm:text-lg">
 				<span class="text-accent">Hey, I'm Shifat.</span>  
 				I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.
-			</div> -->
+			</div>
 			<Terminal />
 		</div>
 	</main>
 </Layout>
 <style scoped>
 	.cursor {
-	background-color: #fa5e32;
+	background-color: #A6EC61;
 	line-height: 17px;
 	-webkit-animation: blink 1s step-end infinite;
-	width: 12px;
+	animation: blink 1s step-end infinite;
+	z-index: -10;
+	width: 18px;
 	height: 32px;
 	}
 	.cursor-sm {
-	background: #fa5e32;
+	background: #A6EC61;
 	line-height: 17px;
 	-webkit-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
+	z-index: -10;
 	width: 12px;
 	height: 22px;
 	}
