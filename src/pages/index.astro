@@ -7,8 +7,8 @@ import Terminal from '../components/Terminal.astro'
 	<main class="flex justify-center">
 		<div class="max-w-[900px] mx-4">
 			<div class="mt-28 flex gap-x-2 items-center">
-				<div class="text-grey1 sm:text-3xl text-xl font-ubuntu_bold">>_&nbspShifat Habib</div>
-				<div class="sm:flex hidden cursor"></div>
+				<div class="text-white sm:text-6xl text-3xl font-jersey">>_&nbspShifat Habib</div>
+				<div class="sm:flex hidden cursor bg-origin-content"></div>
 				<div class="sm:hidden  flex cursor-sm"></div>
 			</div>
 			<div class="text-grey1 mt-6 sm:mt-12 font-ubuntu_bold font-semibold text-sm sm:text-lg">
@@ -22,21 +22,34 @@ import Terminal from '../components/Terminal.astro'
 <style scoped>
 	.cursor {
 	background-color: #A6EC61;
+	/* box-shadow: #A6EC61; */
+	/* background-image: linear-gradient(rgba(161, 252, 42, 0.515) 50px, transparent 2px),
+	linear-gradient(rgba(40, 150, 55, 0.7) 10px, transparent 10px), 
+	linear-gradient( rgba(12, 255, 45, 0.7) 10px, transparent 2px), 
+	linear-gradient(90deg, rgba(13, 80, 22, 0.7) 10px, transparent 2px),  
+	linear-gradient(90deg, rgba(70, 184, 74, 0.7) 10px, transparent .1em); */
+	/* outline: solid 0.25em #000; */
+	box-shadow: inset .313em .313em 0 rgba(44, 121, 77, 0.4), inset -.313em -.313em 0 rgba(255, 255, 255, 0.561);
 	line-height: 17px;
-	-webkit-animation: blink 1s step-end infinite;
+	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
 	z-index: -10;
-	width: 18px;
-	height: 32px;
+	width: 20px;
+	height: 46px;
 	}
 	.cursor-sm {
 	background: #A6EC61;
+	background-image: linear-gradient(rgba(161, 252, 42, 0.515) 50px, transparent 2px),
+	linear-gradient(rgba(40, 150, 55, 0.7) 10px, transparent 10px), 
+	linear-gradient( rgba(12, 255, 45, 0.7) 10px, transparent 2px), 
+	linear-gradient(90deg, rgba(13, 80, 22, 0.7) 10px, transparent 20px),  
+	linear-gradient(90deg, rgba(70, 184, 74, 0.7) 10px, transparent .1em);
 	line-height: 17px;
-	-webkit-animation: blink 1s step-end infinite;
+	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
 	z-index: -10;
 	width: 12px;
-	height: 22px;
+	height: 26px;
 	}
 	@-webkit-keyframes blink {
 	0% { opacity: 1.0; }

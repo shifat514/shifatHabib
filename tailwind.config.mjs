@@ -10,14 +10,21 @@ export default {
 			fontFamily: {
 				ubuntu: ['ubuntu'],
 				ubuntu_light: ['ubuntu-light'],
-				ubuntu_bold:['ubuntu-bold']
+				ubuntu_bold:['ubuntu-bold'],
+				spacemono: ['spacemono'],
+				spacemono_bold: ['spacemono_bold'],
+				jersey:['jersey'],
 			},
 			colors: {
 				background:'#E9E9E9',
 				primary: '#f8f8f8',
 				accent:'#A6EC61',
 				terminal:'#1E1F21',
+				terminal1:'#081f2d',
 				header:'#373A3E',
+				header1:'#767c7f',
+				header2:'#476272',
+				headerIcon:'#506d7f',
 				body:'#FAFAFA',
 				black: '#222222',
 				black200: '#231F20',
@@ -45,6 +52,7 @@ export default {
 				yellow100: '#CA8A04',
 				yellow200: '#FEF08A',
 				yellow: '#CA8A04',
+
 			},
 		},
 	},
