@@ -3,23 +3,83 @@ import Layout from '../layouts/Layout.astro';
 import Terminal from '../components/Terminal.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="flex justify-center">
-		<div class="max-w-[900px] mx-4">
-			<div class="mt-28 flex gap-x-2 items-center">
-				<div class="text-white sm:text-6xl text-3xl font-jersey">>_&nbspShifat Habib</div>
-				<div class="sm:flex hidden cursor bg-origin-content"></div>
-				<div class="sm:hidden  flex cursor-sm"></div>
-			</div>
-			<div class="text-grey1 mt-6 sm:mt-12 font-ubuntu_bold font-semibold text-sm sm:text-lg">
-				<span class="text-accent">Hey, I'm Shifat.</span>  
-				I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.
-			</div>
-			<Terminal />
+<Layout client:load title="Welcome to Astro.">
+	<main  class="flex justify-center">
+		<div class="w-[1000px] mt-32 mx-4">
+				<div>
+					<div class="mt-10 bg-accent p-3 border-8 border-terminal1 sm:flex sm:justify-between">
+						<div class="-mt-11">
+							<div class="pixel bg-background w-[380px] shrink-0 flex flex-nowrap gap-x-4 p-6">
+								<div class="text-white sm:text-5xl text-xl font-jersey">
+									>_&nbspShifat Habib
+								</div>
+								<div class="sm:flex hidden cursor bg-origin-content">
+								</div>
+								<div class="sm:hidden  flex cursor-sm"></div>
+							</div>
+						</div>
+						<div class="text-terminal mt-2 font-ubuntu_bold text-start text-sm">
+							<span class="text-terminal2">Hey, I'm Shifat! </span>  
+							I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.
+						</div>
+					</div>
+				</div>
+				<div>
+					<Terminal />
+				</div>
+			</div>	
 		</div>
 	</main>
 </Layout>
 <style scoped>
+
+
+	.pixel {
+	/* position: relative; */
+	/* width: 5em;
+	height: 5em; */
+	float: left;
+	margin: 0 0.625em;
+	/* outline: solid 0.25em #000; */
+	box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(255,255,255,0.4), 0 1em 0.625em -.4em rgba(0,0,0,0.8);
+	transition: linear .2s;
+	}
+
+	.pixel:hover {
+	box-shadow: inset .313em .313em 0 rgba(0,0,0,0.8), inset -.313em -.313em 0 rgba(255,255,255,0.6), 0 1em 0.625em -.4em rgba(31, 30, 30, 0.8);
+	}
+
+	.pixel:before {
+	content: " ";
+	position: absolute;
+	top: -.25em;
+	left: -.25em;
+	width: .625em;
+	height: .625em;
+	background: #1b1b1b;
+	border-bottom: solid .25em #000;
+	border-right: solid .25em #000;
+	}
+
+	.pixel:after {
+	content: " ";
+	position: absolute;
+	bottom: -.25em;
+	right: -.25em;
+	/* width: .625em;
+	height: .625em; */
+	background: #1b1b1b;
+	border-top: solid .25em #000;
+	border-left: solid .25em #000;
+	}
+
+
+
+
+
+
+
+
 	.cursor {
 	background-color: #A6EC61;
 	/* box-shadow: #A6EC61; */
@@ -33,9 +93,9 @@ import Terminal from '../components/Terminal.astro'
 	line-height: 17px;
 	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
-	z-index: -10;
+	/* z-index: -10; */
 	width: 20px;
-	height: 46px;
+	height: 42	px;
 	}
 	.cursor-sm {
 	background: #A6EC61;
@@ -47,7 +107,7 @@ import Terminal from '../components/Terminal.astro'
 	line-height: 17px;
 	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
-	z-index: -10;
+	/* z-index: -10; */
 	width: 12px;
 	height: 26px;
 	}

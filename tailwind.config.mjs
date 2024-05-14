@@ -16,7 +16,7 @@ export default {
 				jersey:['jersey'],
 			},
 			colors: {
-				background:'#E9E9E9',
+				background:'#092537',
 				primary: '#f8f8f8',
 				accent:'#A6EC61',
 				terminal:'#1E1F21',
