@@ -3,14 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Terminal from '../components/Terminal.astro'
 ---
 
-<Layout client:load title="Welcome to Astro.">
+<Layout client:load title="Shifat Habib">
 	<main  class="flex justify-center">
-		<div class="w-[1000px] mt-32 mx-4">
+		<div class="w-[1000px] mt-16 sm:mt-32 mx-4">
 				<div>
-					<div class="mt-10 bg-accent p-3 border-8 border-terminal1 sm:flex sm:justify-between">
-						<div class="-mt-11">
-							<div class="pixel bg-background w-[380px] shrink-0 flex flex-nowrap gap-x-4 p-6">
-								<div class="text-white sm:text-5xl text-xl font-jersey">
+					<div class="bg-accent p-2 md:p-4 border-4 sm:border-[12px] border-terminal1 md:flex  md:gap-x-4 ">
+						<div class="-mt-12 ">
+							<div class="pixel md:border-none border-2 border-terminal1 bg-background w-[250px] sm:w-[380px] flex gap-x-4 p-5 sm:p-6 z-20">
+								<div class="text-white sm:text-5xl text-3xl font-jersey">
 									>_&nbspShifat Habib
 								</div>
 								<div class="sm:flex hidden cursor bg-origin-content">
@@ -18,9 +18,9 @@ import Terminal from '../components/Terminal.astro'
 								<div class="sm:hidden  flex cursor-sm"></div>
 							</div>
 						</div>
-						<div class="text-terminal mt-2 font-ubuntu_bold text-start text-sm">
-							<span class="text-terminal2">Hey, I'm Shifat! </span>  
-							I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday.
+						<div class="text-terminal text-justify mt-4 md:mt-0 font-ubuntu_bold text-sm md:text-base">
+							<span class="text-terminal2">"Hey, I'm Shifat! </span>  
+							I'm a frontend developer. I like designing and developing frontend UI. I also spend a little bit of time centering div and updating npm packages everyday."
 						</div>
 					</div>
 				</div>
@@ -32,84 +32,44 @@ import Terminal from '../components/Terminal.astro'
 	</main>
 </Layout>
 <style scoped>
-
-
 	.pixel {
-	/* position: relative; */
-	/* width: 5em;
-	height: 5em; */
-	float: left;
-	margin: 0 0.625em;
-	/* outline: solid 0.25em #000; */
-	box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(255,255,255,0.4), 0 1em 0.625em -.4em rgba(0,0,0,0.8);
-	transition: linear .2s;
+		box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(143, 142, 142, 0.4), 0 1em 0.625em -.4em rgba(4, 4, 4, 0.8);
+		transition: linear .2s;
 	}
 
 	.pixel:hover {
-	box-shadow: inset .313em .313em 0 rgba(0,0,0,0.8), inset -.313em -.313em 0 rgba(255,255,255,0.6), 0 1em 0.625em -.4em rgba(31, 30, 30, 0.8);
+	   box-shadow: inset .313em .313em 0 rgba(0,0,0,0.8), inset -.313em -.313em 0 rgba(255,255,255,0.6), 0 1em 0.625em -.4em rgba(31, 30, 30, 0.8);
 	}
 
 	.pixel:before {
-	content: " ";
-	position: absolute;
-	top: -.25em;
-	left: -.25em;
-	width: .625em;
-	height: .625em;
-	background: #1b1b1b;
 	border-bottom: solid .25em #000;
 	border-right: solid .25em #000;
 	}
 
 	.pixel:after {
-	content: " ";
-	position: absolute;
-	bottom: -.25em;
-	right: -.25em;
-	/* width: .625em;
-	height: .625em; */
-	background: #1b1b1b;
 	border-top: solid .25em #000;
 	border-left: solid .25em #000;
 	}
 
-
-
-
-
-
-
-
 	.cursor {
 	background-color: #A6EC61;
-	/* box-shadow: #A6EC61; */
-	/* background-image: linear-gradient(rgba(161, 252, 42, 0.515) 50px, transparent 2px),
-	linear-gradient(rgba(40, 150, 55, 0.7) 10px, transparent 10px), 
-	linear-gradient( rgba(12, 255, 45, 0.7) 10px, transparent 2px), 
-	linear-gradient(90deg, rgba(13, 80, 22, 0.7) 10px, transparent 2px),  
-	linear-gradient(90deg, rgba(70, 184, 74, 0.7) 10px, transparent .1em); */
-	/* outline: solid 0.25em #000; */
 	box-shadow: inset .313em .313em 0 rgba(44, 121, 77, 0.4), inset -.313em -.313em 0 rgba(255, 255, 255, 0.561);
 	line-height: 17px;
 	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
-	/* z-index: -10; */
 	width: 20px;
-	height: 42	px;
+	height: 42px;
 	}
 	.cursor-sm {
 	background: #A6EC61;
-	background-image: linear-gradient(rgba(161, 252, 42, 0.515) 50px, transparent 2px),
-	linear-gradient(rgba(40, 150, 55, 0.7) 10px, transparent 10px), 
-	linear-gradient( rgba(12, 255, 45, 0.7) 10px, transparent 2px), 
-	linear-gradient(90deg, rgba(13, 80, 22, 0.7) 10px, transparent 20px),  
-	linear-gradient(90deg, rgba(70, 184, 74, 0.7) 10px, transparent .1em);
+	box-shadow: inset .313em .313em 0 rgba(44, 121, 77, 0.4), inset -.313em -.313em 0 rgba(255, 255, 255, 0.561);
 	line-height: 17px;
 	-webkit-animation: blink 2s step-end infinite;
 	animation: blink 1s step-end infinite;
-	/* z-index: -10; */
+	z-index: 0 !important;
 	width: 12px;
-	height: 26px;
+	height: 32px;
+	z-index: 2 !important;
 	}
 	@-webkit-keyframes blink {
 	0% { opacity: 1.0; }
